@@ -1,0 +1,10 @@
+# Your data never belongs in this repository.
+.data/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+config/
+data/
+research/
+*.pdf

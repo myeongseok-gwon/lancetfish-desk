@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading · Lancetfish</title>
+<link rel="icon" href="/ui/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/ui/app.css">
+<link rel="stylesheet" href="/ui/reader.css">
+</head>
+<body class="reader-page">
+<div id="top"></div>
+<header class="reader-heading">
+  <a id="readerBack" class="reader-back" href="/library">← Library</a>
+  <div class="reader-name"><h1 id="readerTitle">Opening paper…</h1><p id="readerSubtitle">Your annotations save as you work.</p></div>
+  <div class="reader-actions">
+    <a id="readerDetails" class="btn quiet" hidden>Paper details</a>
+    <details class="reader-menu"><summary class="btn">Export</summary><div>
+      <a id="readerPdf">Original PDF</a>
+      <a id="readerMarkdown">Annotations as Markdown</a>
+      <button id="readerRecovery" type="button">Annotations as JSON</button>
+      <button id="readerSyncAnki" type="button">Sync queued vocabulary cards</button>
+    </div></details>
+  </div>
+</header>
+<main id="readerHost" aria-label="PDF reader"></main>
+<dialog id="readerHelper" class="reader-helper"><form method="dialog" class="reader-helper-head"><strong id="helperTitle"></strong><button aria-label="Close" class="btn quiet">✕</button></form><div id="helperBody"></div></dialog>
+<script type="module" src="/ui/reader.js"></script>
+</body>
+</html>

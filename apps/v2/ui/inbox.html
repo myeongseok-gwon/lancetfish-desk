@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inbox</title>
+<link rel="icon" href="/ui/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/ui/app.css">
+<link rel="stylesheet" href="/ui/pdf-preview.css">
+</head>
+<body>
+<div id="top"></div>
+<div class="inbox-workspace" id="workspace">
+<main class="inbox">
+  <div class="inbox-head">
+    <div><h1>Inbox</h1><p id="sub">&nbsp;</p></div>
+    <div class="acts">
+      <button class="btn" id="readNext"></button>
+      <button class="btn" id="scan"></button>
+    </div>
+  </div>
+  <div class="intake-guide"><p>Put new PDFs in <code id="inboxDir">~/Papers/Inbox</code>. Process inbox, check the identification, then confirm to add each paper to your library.</p><button class="btn quiet" id="openInbox">Open inbox folder ↗</button></div>
+  <div class="scanbar hidden" id="scanbar"><i style="width:0%"></i></div>
+  <div id="out"></div>
+  <p class="footnote">A confirmed paper is moved into the “filed” folder of your library under a readable name, with its citation, and leaves the inbox.</p>
+</main>
+<aside class="pdf-preview" id="pdfPreview" aria-label="Inbox PDF" hidden></aside>
+</div>
+<script type="module" src="/ui/inbox.js"></script>
+</body>
+</html>

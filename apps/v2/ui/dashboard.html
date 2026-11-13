@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lancetfish</title>
+<link rel="icon" href="/ui/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/ui/app.css">
+</head>
+<body class="dash">
+<div id="top"></div>
+<main class="dash-main">
+  <div class="stage" id="stage"></div>
+  <aside class="rail" aria-label="Status">
+    <section id="agents"><div class="head"><span class="section-label">Agents</span></div><div class="body"></div></section>
+    <section id="limits"><div class="head"><span class="section-label">Limits</span><span class="asof"></span></div><div class="body"></div></section>
+    <section id="today"><div class="head"><span class="section-label">Today</span></div><div class="body"></div></section>
+    <section id="history"><div class="head"><span class="section-label">20 weeks</span><span class="asof"></span></div><div class="body"></div></section>
+  </aside>
+</main>
+<script type="module" src="/ui/dashboard.js"></script>
+</body>
+</html>
